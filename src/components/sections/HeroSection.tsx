@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart, Star, Zap } from 'lucide-react';
 import { SiteConfig } from '../../config/siteConfig';
+import { SpiderHeroCard } from '../ui/SpiderHeroCard';
 
 interface HeroSectionProps {
   config: SiteConfig;
@@ -47,7 +48,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ config }) => {
             🕷️ ISSUE #1 SPECIAL EDITION 🕷️
           </span>
           <h2 className="text-4xl sm:text-6xl md:text-8xl font-comic text-white uppercase text-glow-red leading-tight">
-            {config.heroHeadline || "HAPPY BIRTHDAY, MY HERO ❤️"}
+            {config.heroHeadline || "HAPPY BOYFRIEND DAY, MY HERO ❤️"}
           </h2>
         </motion.div>
 
@@ -80,7 +81,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ config }) => {
           </div>
         </motion.div>
 
-        {/* Comic Panel Photo Frame with Halftone Effect */}
+        {/* Comic Panel Frame with Vector Spider Hero Card */}
         <motion.div
           initial={{ opacity: 0, y: 40, rotate: -2 }}
           whileInView={{ opacity: 1, y: 0, rotate: 0 }}
@@ -99,33 +100,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ config }) => {
               <span className="bg-black text-white px-2 py-0.5 rounded text-xs">NO. 1 IN MY HEART</span>
             </div>
 
-            {/* Photo Container with Halftone Overlay */}
-            <div className="relative aspect-square sm:aspect-[4/5] rounded-xl overflow-hidden border-2 border-black bg-black">
-              <img
-                src={config.heroImage || "/photos/photo1.jpeg"}
-                alt={config.partnerName}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              {/* Halftone texture overlay */}
-              <div className="absolute inset-0 bg-halftone opacity-25 pointer-events-none" />
-              {/* Spiderweb overlay corner */}
-              <div className="absolute top-0 right-0 w-24 h-24 pointer-events-none opacity-80">
-                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M100,0 L0,0 M100,0 L100,100 M100,0 L10,90" stroke="#E50914" strokeWidth="2" />
-                  <path d="M100,30 Q70,30 70,0 M100,60 Q40,60 40,0" stroke="#E50914" strokeWidth="1" />
-                </svg>
-              </div>
-
-              {/* Bottom speech bubble on photo */}
-              <div className="absolute bottom-3 left-3 right-3 bg-black/80 backdrop-blur-md p-3 rounded-lg border border-spider-red text-center">
-                <p className="font-comic text-lg sm:text-xl text-spider-accent tracking-wide uppercase">
-                  "Another year of being absolutely amazing."
-                </p>
-              </div>
-            </div>
+            {/* Interactive Spider Hero Card (Vector Illustration & Suit Changer) */}
+            <SpiderHeroCard partnerName={config.partnerName} />
           </div>
         </motion.div>
       </div>
     </section>
   );
 };
+
+

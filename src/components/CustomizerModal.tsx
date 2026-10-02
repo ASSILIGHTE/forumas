@@ -89,7 +89,7 @@ export const CustomizerModal: React.FC<CustomizerModalProps> = ({
                   : 'bg-slate-800 text-slate-400 hover:text-white'
               }`}
             >
-              Photos & Memories 📸
+              Arcade & Photo Settings 🎮
             </button>
           </div>
 
@@ -195,25 +195,18 @@ export const CustomizerModal: React.FC<CustomizerModalProps> = ({
             {activeTab === 'photos' && (
               <div className="space-y-4">
                 <p className="text-xs text-slate-400">
-                  Update photo URLs for memories (you can use paths like <code>/photos/photo1.jpeg</code> or external image URLs):
+                  Secara default, aplikasi menggunakan <strong>Spider-Man Interactive Minigames Hub 🎮</strong> tanpa memerlukan foto. Namun jika nanti punya foto, kamu bisa memasukkan URL foto di sini (Opsional):
                 </p>
-                {formData.memories.slice(0, 6).map((mem, i) => (
-                  <div key={mem.id} className="p-3 bg-slate-900 rounded-xl border border-slate-800 space-y-2">
-                    <div className="flex justify-between items-center text-xs font-comic text-spider-accent">
-                      <span>PHOTO #{i + 1} - {mem.title}</span>
-                    </div>
-                    <input
-                      type="text"
-                      value={mem.url}
-                      onChange={(e) => {
-                        const newMemories = [...formData.memories];
-                        newMemories[i] = { ...newMemories[i], url: e.target.value };
-                        setFormData({ ...formData, memories: newMemories });
-                      }}
-                      className="w-full bg-black border border-slate-700 rounded-lg p-2 text-xs text-slate-200"
-                    />
-                  </div>
-                ))}
+                <div className="p-3 bg-slate-900 rounded-xl border border-slate-800 space-y-2">
+                  <label className="block text-xs font-comic text-spider-accent uppercase">HERO MAIN IMAGE (OPSIONAL)</label>
+                  <input
+                    type="text"
+                    value={formData.heroImage}
+                    onChange={(e) => setFormData({ ...formData, heroImage: e.target.value })}
+                    placeholder="Cosplay / Photo URL"
+                    className="w-full bg-black border border-slate-700 rounded-lg p-2 text-xs text-slate-200"
+                  />
+                </div>
               </div>
             )}
           </div>

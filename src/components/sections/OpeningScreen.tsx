@@ -51,10 +51,10 @@ export const OpeningScreen: React.FC<OpeningScreenProps> = ({ onStartMission }) 
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-spider-red/20 border border-spider-red text-spider-red-glow font-comic tracking-widest uppercase text-sm mb-6 shadow-sm shadow-spider-red/50"
         >
           <ShieldAlert className="w-4 h-4 animate-bounce" />
-          <span>CLASSIFIED BIRTHDAY DIRECTIVE #101</span>
+          <span>CLASSIFIED BOYFRIEND DAY DIRECTIVE #101</span>
         </motion.div>
 
-        {/* HERO PORTRAIT PHOTO FRAME WITH SPIDER-MAN COMIC AESTHETIC */}
+        {/* HERO PORTRAIT AVATAR WITH SPIDER-MAN COMIC AESTHETIC */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -64,15 +64,27 @@ export const OpeningScreen: React.FC<OpeningScreenProps> = ({ onStartMission }) 
           onClick={() => sfx.playWebShot()}
         >
           <div className="relative w-44 h-44 sm:w-56 sm:h-56 rounded-full p-2 bg-gradient-to-tr from-spider-red via-spider-red-glow to-spider-blue border-4 border-black shadow-comic shadow-spider-red group-hover:shadow-spider-glow transition-all duration-500 flex items-center justify-center">
-            {/* Inner Photo Container */}
-            <div className="w-full h-full rounded-full overflow-hidden border-2 border-black bg-black relative">
-              <img
-                src="/photos/photo1.jpeg"
-                alt="Spider Hero Welcome"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              />
+            {/* Inner Avatar Emblem Container */}
+            <div className="w-full h-full rounded-full border-2 border-black bg-gradient-to-b from-slate-900 via-black to-spider-card flex flex-col items-center justify-center relative overflow-hidden group">
+              <span className="text-6xl sm:text-7xl animate-pulse group-hover:scale-125 transition-transform duration-500 z-10">
+                🕷️
+              </span>
+              <span className="font-comic text-xs sm:text-sm text-spider-accent uppercase tracking-widest mt-1 z-10 bg-black/70 px-2 py-0.5 rounded border border-spider-accent/50">
+                SPIDER-HERO #1
+              </span>
+
               {/* Halftone texture overlay */}
               <div className="absolute inset-0 bg-halftone opacity-25 pointer-events-none" />
+
+              {/* Web line background animation */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-30 pointer-events-none">
+                <svg viewBox="0 0 100 100" className="w-full h-full animate-spin-slow">
+                  <circle cx="50" cy="50" r="40" fill="none" stroke="#E50914" strokeWidth="1" strokeDasharray="3 3" />
+                  <circle cx="50" cy="50" r="25" fill="none" stroke="#00E5FF" strokeWidth="1" strokeDasharray="2 2" />
+                  <line x1="50" y1="0" x2="50" y2="100" stroke="#E50914" strokeWidth="1" />
+                  <line x1="0" y1="50" x2="100" y2="50" stroke="#E50914" strokeWidth="1" />
+                </svg>
+              </div>
             </div>
 
             {/* Floating Heart & Spider Badge */}
@@ -82,7 +94,7 @@ export const OpeningScreen: React.FC<OpeningScreenProps> = ({ onStartMission }) 
             </div>
 
             <div className="absolute -top-2 -left-2 text-2xl animate-bounce">
-              🕷️
+              🕸️
             </div>
           </div>
         </motion.div>
@@ -94,7 +106,7 @@ export const OpeningScreen: React.FC<OpeningScreenProps> = ({ onStartMission }) 
           transition={{ delay: 0.6, duration: 0.8 }}
           className="text-4xl sm:text-6xl md:text-7xl font-comic text-white tracking-wide uppercase text-glow-red mb-3"
         >
-          Hey, My Amazing Person…
+          Hey, Mas Sayang… 🤍
         </motion.h1>
 
         <motion.p

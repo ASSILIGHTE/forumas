@@ -127,11 +127,11 @@ export const FinalGift: React.FC<FinalGiftProps> = ({ config, onGiftOpened }) =>
             </div>
 
             <h1 className="text-4xl sm:text-7xl font-comic text-white uppercase text-glow-red tracking-wider mb-4 leading-tight">
-              HAPPY BIRTHDAY, {config.partnerName} ❤️
+              HAPPY BOYFRIEND DAY, {config.partnerName} ❤️
             </h1>
 
             <p className="text-xl sm:text-3xl text-spider-accent font-comic tracking-wide max-w-2xl leading-relaxed">
-              "You are not just my favorite person. You're my favorite part of every day."
+              "Kamu bukan cuma pacar favoritku, tapi juga bagian paling bikin bahagia di setiap hariku."
             </p>
           </motion.div>
         )}

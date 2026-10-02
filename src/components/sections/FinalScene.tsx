@@ -84,10 +84,10 @@ export const FinalScene: React.FC<FinalSceneProps> = ({ config, onOpenSettings }
           className="space-y-2"
         >
           <p className="text-2xl sm:text-4xl font-comic text-spider-accent uppercase tracking-wider">
-            HAPPY BIRTHDAY, {config.partnerName}
+            HAPPY BOYFRIEND DAY, {config.partnerName}
           </p>
           <p className="text-base sm:text-xl font-comic text-slate-400 tracking-widest">
-            {config.birthdayDate ? new Date(config.birthdayDate).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '15 MEI 2024'}
+            {config.birthdayDate ? new Date(config.birthdayDate).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : '3 OKTOBER 2026'}
           </p>
         </motion.div>
 
@@ -100,7 +100,7 @@ export const FinalScene: React.FC<FinalSceneProps> = ({ config, onOpenSettings }
           className="pt-6 border-t border-slate-800 inline-block"
         >
           <p className="font-handwritten text-3xl sm:text-4xl text-spider-red font-bold">
-            With love,
+            Selalu untukmu,
           </p>
           <p className="font-comic text-2xl sm:text-3xl text-white tracking-wider uppercase mt-1">
             {config.yourName} 🕷️❤️
@@ -111,7 +111,7 @@ export const FinalScene: React.FC<FinalSceneProps> = ({ config, onOpenSettings }
       {/* Footer */}
       <footer className="relative z-10 w-full max-w-5xl flex items-center justify-center pt-12 border-t border-slate-900 text-xs font-comic text-slate-500">
         <div>
-          <span>🕷️ A BIRTHDAY SURPRISE FOR MY AMAZING PERSON</span>
+          <span>🕷️ A BOYFRIEND DAY SURPRISE FOR MY AMAZING PERSON</span>
         </div>
       </footer>
     </section>

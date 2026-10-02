@@ -141,7 +141,7 @@ export const MissionCountdown: React.FC<MissionCountdownProps> = ({ targetDateSt
               MISSION COMPLETE! 🎉
             </h3>
             <p className="text-xl sm:text-2xl text-slate-100 font-comic">
-              The birthday celebrations have officially commenced!
+              Happy Boyfriend Day! Momen spesial khusus buat kamu dimulai sekarang! 🎉
             </p>
             <button
               onClick={fireConfetti}

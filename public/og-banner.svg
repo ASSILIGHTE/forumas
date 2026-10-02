@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08090C" />
+      <stop offset="50%" stop-color="#121420" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+
+    <!-- Red Glow -->
+    <radialGradient id="redGlow" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#E50914" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#E50914" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Blue Glow -->
+    <radialGradient id="blueGlow" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Halftone Pattern -->
+    <pattern id="halftone" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="2.5" fill="#ffffff" opacity="0.04" />
+    </pattern>
+
+    <!-- Card Border Shadow Filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="8" dy="12" stdDeviation="6" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+  <rect width="1200" height="630" fill="url(#redGlow)" />
+  <rect width="1200" height="630" fill="url(#blueGlow)" />
+  <rect width="1200" height="630" fill="url(#halftone)" />
+
+  <!-- Spider Web Background Structure -->
+  <g stroke="#E50914" stroke-width="1.5" opacity="0.25">
+    <line x1="600" y1="0" x2="600" y2="630" />
+    <line x1="0" y1="315" x2="1200" y2="315" />
+    <line x1="0" y1="0" x2="1200" y2="630" />
+    <line x1="1200" y1="0" x2="0" y2="630" />
+    <circle cx="600" cy="315" r="120" fill="none" stroke-dasharray="4 4" />
+    <circle cx="600" cy="315" r="240" fill="none" stroke-dasharray="6 6" />
+    <circle cx="600" cy="315" r="360" fill="none" stroke-dasharray="8 8" />
+  </g>
+
+  <!-- Main Comic Card Container -->
+  <g transform="translate(100, 65)">
+    <!-- Outer Black Border & White Frame -->
+    <rect x="0" y="0" width="1000" height="500" rx="28" fill="#FFFFFF" stroke="#000000" stroke-width="8" filter="url(#shadow)" />
+    <!-- Inner Dark Panel -->
+    <rect x="16" y="16" width="968" height="468" rx="20" fill="#0D0E15" stroke="#000000" stroke-width="4" />
+    <rect x="16" y="16" width="968" height="468" rx="20" fill="url(#redGlow)" />
+
+    <!-- Top Comic Header Tag -->
+    <g transform="translate(40, 40)">
+      <rect x="0" y="0" width="340" height="38" rx="19" fill="#000000" opacity="0.6" stroke="#FFCC00" stroke-width="1.5" />
+      <text x="170" y="25" fill="#FFCC00" font-family="'Impact', 'Arial Black', sans-serif" font-size="16" text-anchor="middle" letter-spacing="2">
+        🕷️ ISSUE #1 SPECIAL EDITION 🕷️
+      </text>
+    </g>
+
+    <!-- Main Headline Text -->
+    <text x="500" y="170" fill="#FFFFFF" font-family="'Impact', 'Arial Black', sans-serif" font-size="58" text-anchor="middle" letter-spacing="2">
+      HAPPY BOYFRIEND DAY, MASSS 🤍
+    </text>
+
+    <!-- Subtitle Text -->
+    <text x="500" y="225" fill="#FFCC00" font-family="'Arial', sans-serif" font-weight="bold" font-size="22" text-anchor="middle" letter-spacing="1">
+      "Daripada cuek, sekarang kok kangen terus ya, Mas? 😭🤍"
+    </text>
+
+    <!-- Center Spider-Man Vector Mask Emblem -->
+    <g transform="translate(500, 310)">
+      <circle cx="0" cy="0" r="55" fill="#E50914" stroke="#000000" stroke-width="4" />
+      <path d="M-30,-15 Q0,-25 15,0 Q0,30 -35,15 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3" />
+      <path d="M30,-15 Q0,-25 -15,0 Q0,30 35,15 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3" />
+      <circle cx="0" cy="-60" r="14" fill="#FFCC00" />
+      <text x="0" y="-55" font-size="10" text-anchor="middle">⚡</text>
+    </g>
+
+    <!-- Partner Badge Pill -->
+    <g transform="translate(500, 415)">
+      <rect x="-180" y="-22" width="360" height="44" rx="22" fill="#E50914" stroke="#000000" stroke-width="4" />
+      <text x="0" y="7" fill="#FFFFFF" font-family="'Impact', 'Arial Black', sans-serif" font-size="22" text-anchor="middle" letter-spacing="1">
+        UNTUK MAS FAVORITKU 🤍
+      </text>
+    </g>
+  </g>
+</svg>

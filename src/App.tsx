@@ -7,7 +7,7 @@ import { OpeningScreen } from './components/sections/OpeningScreen';
 import { HeroSection } from './components/sections/HeroSection';
 import { MissionCountdown } from './components/sections/MissionCountdown';
 import { OurStory } from './components/sections/OurStory';
-import { OurMemories } from './components/sections/OurMemories';
+import { SpiderArcade } from './components/sections/SpiderArcade';
 import { YourSuperpowers } from './components/sections/YourSuperpowers';
 import { InteractiveWeb } from './components/sections/InteractiveWeb';
 import { FinalGift } from './components/sections/FinalGift';
@@ -84,8 +84,8 @@ export function App() {
           {/* Section 3: Our Story */}
           <OurStory config={config} />
 
-          {/* Section 4: Our Memories */}
-          <OurMemories config={config} />
+          {/* Section 4: Spider Arcade Minigames (Replaces photo memories) */}
+          <SpiderArcade config={config} />
 
           {/* Section 5: Your Superpowers */}
           <YourSuperpowers config={config} />
@@ -116,3 +116,4 @@ export function App() {
 }
 
 export default App;
+
