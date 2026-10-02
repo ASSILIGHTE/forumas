@@ -88,7 +88,7 @@ export const defaultConfig: SiteConfig = {
       icon: "🙈",
       title: "Dulu Cuek, Sekarang Kangen terus",
       subtitle: "The Origin Story",
-      quote: "Padahal awalnya aku cuek banget ya, Mas? Mas yang berkali-kali ngajak kenalan, aku sok jual mahal. Tapi kok sekarang aku yang kangen terus? 😭",
+      quote: "Semoga hari ini Mas tahu kalau ada seseorang yang selalu senang punya Mas di hidupnya. 🤍",
       color: "red"
     },
     {
