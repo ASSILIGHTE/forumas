@@ -125,7 +125,7 @@ export const defaultConfig: SiteConfig = {
       icon: "💬",
       title: "SUPER CHAT SMILE",
       powerName: "Sinar Penenang Mood",
-      description: "Cuma gara-gara 1 chat dari Mas, aku langsung senyum-senyum sendiri seharian 😭",
+      description: "Aku suka banget cara Mas memperlakukan aku. Cara Mas ngomong yang lembut, cara Mas selalu berusaha ada, cara Mas ingat hal-hal kecil yang pernah aku ceritakan, dan cara Mas bikin aku merasa kalau aku ini memang berharga buat Mas.",
       secretDetail: "Efek: Bikin mood yang tadinya capek langsung aman dan gembira.",
       color: "red"
     },
