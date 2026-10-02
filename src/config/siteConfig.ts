@@ -143,7 +143,7 @@ export const defaultConfig: SiteConfig = {
       icon: "🧘‍♂️",
       title: "SUPER PATIENCE",
       powerName: "Tingkat Kesabaran 1000%",
-      description: "Sabar banget ngeradapin aku yang kadang manja, kadang diem, kadang mikirin sesuatu yang belum tentu terjadi.",
+      description: "Sabar banget ngehadapin aku yang kadang manja, kadang diem, kadang mikirin sesuatu yang belum tentu terjadi.",
       secretDetail: "Efek: Tempat cerita paling nyaman di dunia.",
       color: "accent"
     },
