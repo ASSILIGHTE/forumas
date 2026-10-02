@@ -98,36 +98,28 @@ export const YourSuperpowers: React.FC<YourSuperpowersProps> = ({ config }) => {
                     </div>
                   </div>
 
-                  {/* BACK CARD */}
-                  <div className="absolute inset-0 w-full h-full rounded-3xl bg-gradient-to-b from-spider-red-dark via-spider-card to-spider-dark border-4 border-black p-6 shadow-comic shadow-spider-accent backface-hidden rotate-y-180 flex flex-col justify-between text-center">
-                    <div className="flex items-center justify-between text-xs font-comic text-spider-accent border-b border-white/10 pb-2">
-                      <span className="flex items-center gap-1">
-                        <Sparkles className="w-3.5 h-3.5" /> ANALYSIS LOG
-                      </span>
-                      <span>{card.icon}</span>
-                    </div>
+                    {/* BACK CARD */}
+                    <div className="absolute inset-0 w-full h-full rounded-3xl bg-gradient-to-b from-spider-red-dark via-spider-card to-spider-dark border-4 border-black p-6 shadow-comic shadow-spider-accent backface-hidden rotate-y-180 flex flex-col justify-between text-center">
+                      <div className="flex items-center justify-between text-xs font-comic text-spider-accent border-b border-white/10 pb-2">
+                        <span className="flex items-center gap-1">
+                          <Sparkles className="w-3.5 h-3.5" /> ANALYSIS LOG
+                        </span>
+                        <span>{card.icon}</span>
+                      </div>
 
-                    <div className="my-auto space-y-4">
-                      <h4 className="text-2xl font-comic text-spider-accent uppercase">
-                        {card.title}
-                      </h4>
-                      <p className="font-body text-slate-100 text-lg leading-relaxed">
-                        "{card.description}"
-                      </p>
-                      <div className="p-3 bg-black/60 rounded-xl border border-spider-red text-left">
-                        <p className="text-xs font-comic text-spider-red tracking-wider uppercase mb-1">
-                          SECRET EFFECT:
-                        </p>
-                        <p className="text-xs font-body text-slate-300">
-                          {card.secretDetail}
+                      <div className="my-auto space-y-4">
+                        <h4 className="text-2xl sm:text-3xl font-comic text-spider-accent uppercase">
+                          {card.title}
+                        </h4>
+                        <p className="font-body text-slate-100 text-lg sm:text-xl leading-relaxed">
+                          "{card.description}"
                         </p>
                       </div>
-                    </div>
 
-                    <div className="pt-2 border-t border-white/10 text-xs font-comic text-slate-400">
-                      ❤️ CERTIFIED SUPERHERO POWER
+                      <div className="pt-2 border-t border-white/10 text-xs font-comic text-slate-400">
+                        ❤️ CERTIFIED SUPERHERO POWER
+                      </div>
                     </div>
-                  </div>
                 </div>
               </motion.div>
             );
