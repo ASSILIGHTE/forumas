@@ -42,7 +42,7 @@ export const OurStory: React.FC<OurStoryProps> = ({ config }) => {
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-spider-red/20 border border-spider-red text-spider-red-glow font-comic tracking-widest text-lg uppercase mb-3"
           >
             <BookOpen className="w-5 h-5 text-spider-red" />
-            <span>ORIGIN CHRONICLES (PHOTO-FREE EDITION)</span>
+            <span>ORIGIN CHRONICLES</span>
           </motion.div>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
